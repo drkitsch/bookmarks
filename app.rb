@@ -12,12 +12,10 @@ class Bookmarks < Sinatra::Base
   end 
 
   get '/bookmarks' do 
-    @bookmark_list = ["http://www.makersacademy.com",
+    @bookmark_list = [ "http://www.makersacademy.com",
     "http://www.destroyallsoftware.com",
-    "http://www.google.com"
-   ]
-   
-   erb :'/index'
+    "http://www.google.com" ]
+  erb :'/index'
   end 
 
 
